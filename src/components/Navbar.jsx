@@ -1,3 +1,4 @@
+import React from "react";
 import ThemeToggle from "./ToggleButton";
 import {Link} from "react-router-dom";
 
@@ -13,10 +14,21 @@ function Navbar(){
           
           {/* Navigation links section */}
         <nav className="flex gap-4 mt-2">
-          <Link to="/" className="text-blue-600 hover:underline">Home</Link>
-          <Link to="/" className="text-blue-600 hover:underline">About</Link>
-          <Link to="/" className="text-blue-600 hover:underline">Dashboard</Link>
-          <Link to="/api" className="text-blue-600 hover:underline">API Data</Link>
+          <ul>
+            <Link to="/" className="text-blue-600 hover:underline">
+                <h3>Home</h3>
+            </Link>
+            <Link to="/" className="text-blue-600 hover:underline">
+                <h3>About</h3>
+            </Link>                  
+            <Link to="/" className="text-blue-600 hover:underline">
+                <h3>Dashboard</h3>
+            </Link>
+            <Link to="/api" className="text-blue-600 hover:underline">
+                <h3>API Data</h3>
+            </Link>
+          </ul>
+          
         </nav>
 
         
