@@ -5,11 +5,11 @@ function Footer({
 }) 
 {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-[var(--card)] text-[var(--muted-foreground)]">
         
       {/* Copyright */}
-      <div className="mt-8 pt-8 border-t border-gray-800 text-center">
-        <p className="text-gray-400 text-sm">
+      <div className="mt-8 pt-8 border-t border-[var(--border)] text-center">
+        <p className="text-[var(--muted-foreground)] text-sm">
           © {year} {companyName}. All rights reserved.
         </p>
       </div>

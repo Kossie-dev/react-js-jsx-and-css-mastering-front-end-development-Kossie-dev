@@ -6,9 +6,7 @@ export default function ThemeToggle() {
     return (
         <button
             onClick={() => setDarkmode(!darkmode)}
-            className={`px-4 py-2 border rounded-lg transition-colors duration-300
-           ${darkmode ? 'bg-gray-100 text-gray-800 border-gray-300' : 'bg-gray-700 text-gray-200 border-gray-600'}`}
-
+            className="px-4 py-2 rounded-lg transition-colors duration-300 bg-[var(--secondary)] text-[var(--secondary-foreground)] border border-[var(--border)]"
         >
             {darkmode ? "Light Mode ☀️" : "Dark Mode 🌙"}
         </button>
